@@ -7,9 +7,6 @@
 
 body {
   background: #0f1014;
-  /* overflow-x: hidden; */
-  /* position: fixed; */
-  /* color: #ffffff; */
 }
 
 .sidebar{
@@ -30,12 +27,7 @@ background-color:#15171f;
 }
 
 
- /* h3{
-    background-image: url("../images/logo\ background.png");
-    display: inline-block;
-    padding: 10px;
-  
-}  */
+
 .logo{
 
 width: 100px;
@@ -182,46 +174,3 @@ display: none;
    opacity: 1;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .navbar {
-  background: #0b0c10;
-}
-
-
-
-
-
-.edit-btn {
-  background: #ffc107;
-  color: #111;
-}
-
-.delete-btn {
-  background: #e50914;
-  color: white;
-}
-
-.update-btn {
-  background: #00c853;
-  color: white;
-} */
