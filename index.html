@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css"
+      integrity="sha512-GmZYQ9SKTnOea030Tbiat0Y+jhnYLIpsGAe6QTnToi8hI2nNbVMETHeK4wm4MuYMQdrc38x+sX77+kVD01eNsQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Movie Crud </title>
+  </head>
+  <body>
+    <div class="sidebar text-center">
+      <div class="mt-5">
+        <a class="" href="index.html">
+          <img class="logo" src="./assets/images/logo.png" alt="" />
+          <!-- <h3 class="text-white mb-0">JioHotstar</h3> -->
+        </a>
+        <div class="mt-5">
+          <button type="button" class="btn add-btn" id="addbtn">
+            <h4 class="mb-0 p-2">+ Add Movie</h4>
+          </button>
+        </div>
+          <div class="form-group mt-5 m-3">
+            <h3>
+              <label for="searchbar" class="text-white">Search Movie</label>
+            </h3>
+            <input type="text"  autocomplete="off" placeholder="Search Movie" class="searchbar search-input form-control"id="searchbar"/>
+            <button type="button" class="btn mt-4 search-btn" id="search_btn">Search</button> 
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container-fluid main-content">
+      <div class="row" id="moviecontainer">
+        <!-- <div class="col-4 mb-3">
+          <div class="card movie-card">
+            <div class="card-header d-flex justify-content-between">
+              <h4 class="mb-0 movie-heading">Leo</h4>
+              <h4><span class="badge badge-success"> 5</span></h4>
+            </div>
+            <div class="card-body p-0">
+              <figure>
+                <img src="./assets/images/leo.jfif" alt="" />
+                <figcaption>
+                  <h4 class="mb-0">Leo</h4>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
+                    saepe a esse earum. Modi aliquid corrupti sint. Numquam,
+                    perspiciatis magni nisi odit a quae deserunt. Odio tempora
+                    magni facere Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Pariatur, dolore quis? Quam, eos quibusdam
+                    esse repellendus explicabo nulla repudiandae ducimus
+                    veritatis! Rem est magnam doloribus.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+              <button class="btn btn add-btn edit-btn">Edit</button>
+              <button class="btn btn add-btn update-btn d-none">Update</button>
+              <button class="btn btn delete-btn">Remove</button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+        <div class="backdrop" id="backdrop"></div>
+        <div class="container">
+          <div class="moviemodel" id="moviemodel">
+            <form id="formSub">
+              <div class="card bg-dark text-white">
+                <div class="card-header d-flex justify-content-between">
+                  <h4 class="form-heading">Add Movie</h4>
+                  <i
+                    role="button"
+                    class="fa-solid fa-x fa-2x"
+                    id="closeModel"
+                  ></i>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="moviename">Movie Name</label>
+                    <input
+                      type="text" required autocomplete="off"
+                      class="form-control bg-secondary text-white"
+                      id="moviename"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="movieimage">Movie Image</label>
+                    <input
+                      type="text" required autocomplete="off"
+                      class="form-control bg-secondary text-white"
+                      id="movieimage"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="movieDesc">Movie Description</label>
+                    <input
+                      type="text" required autocomplete="off"
+                      class="form-control bg-secondary text-white"
+                      id="movieDesc"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="movieRat">Movie Rating</label>
+                    <select name="" id="movieRat" class="form-control bg-secondary text-white ">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <button type="submit" class="btn btn-sm add-btn" id="addmovie"> Add Movie</button>
+                  <button type="button" class="btn btn-sm update-btn d-none" id="updatebtn">Update Movie</button>
+                  <button type="button" class="btn btn-sm close-btn" id="closebtn">Close</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

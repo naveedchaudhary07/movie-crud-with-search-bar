@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+body {
+  background: #0f1014;
+  /* overflow-x: hidden; */
+  /* position: fixed; */
+  /* color: #ffffff; */
+}
+
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width: 400px;
+height:100vh;
+background-color:#15171f;
+/* z-index: 1000; */
+
+}
+
+.main-content{
+  margin-left: 400px;
+  width: calc(100% - 400px);
+  padding: 30px;
+}
+
+
+ /* h3{
+    background-image: url("../images/logo\ background.png");
+    display: inline-block;
+    padding: 10px;
+  
+}  */
+.logo{
+
+width: 100px;
+height: 100px;
+display: inline-block;
+
+}
+.add-btn {
+  background: #00a8ff;
+  color: white;
+}
+
+.delete-btn,.close-btn {
+  background: #e50914;
+  color: white;
+}
+
+.edit-btn {
+  background: #ffc107;
+  color: #111;
+  /* color: white; */
+}
+
+.update-btn {
+  background: #00c853;
+  color: white;
+}
+
+.search-btn {
+  background: #00a8ff;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+.search-input {
+  background: #20232c;
+  color: white;
+  border: 1px solid #3a3c43;
+}
+
+.search-input::placeholder {
+  color: #9a9da5;
+}
+
+ .search-input:focus {
+  background: #20232c;
+  color: white;
+  border-color: #00a8ff;
+  box-shadow: 0 0 5px rgba(0, 168, 255, 0.3);
+} 
+.movie-card {
+  background: #17181d;
+  border: 1px solid #3a3c43;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.movie-card:hover {
+  border-color: #8f9299;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.12);
+}
+
+.movie-heading {
+  color: white;
+}
+
+figure{
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+figure figcaption {
+overflow: auto;
+position: absolute;
+top: 30%;
+left: 0%;
+bottom: 0%;
+padding: 10px;
+height: 100%;
+width: 100%;
+padding: 10px;
+background-color: rgba(0,0,0,0.6);
+color: white;
+transform: translateY(110%);
+transition: all 0.4s ease-in;
+}
+
+
+.movie-card:hover figcaption{
+transform: translateY(0);
+}
+
+
+figure img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+
+.moviemodel{
+position: fixed;
+top: 20%;
+left: 25%;
+width:60%;
+z-index: 10;
+display: none;
+/* transform: translateY(110%); */
+/* transition: all 4s ease-out; */
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 8, 15, 0.75);
+    display: none;
+    cursor: pointer;
+}
+
+
+.moviemodel.active,
+.backdrop.active{
+  display: block;
+}
+
+.moviemodel.active{
+  animation:slidDown .4s ease-out;
+}
+
+
+
+@keyframes slidDown{
+  0%{
+    transform:translateY(110%);
+    opacity: 0;
+  }
+  100%{
+   transform:translateY(0%);
+   opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .navbar {
+  background: #0b0c10;
+}
+
+
+
+
+
+.edit-btn {
+  background: #ffc107;
+  color: #111;
+}
+
+.delete-btn {
+  background: #e50914;
+  color: white;
+}
+
+.update-btn {
+  background: #00c853;
+  color: white;
+} */
