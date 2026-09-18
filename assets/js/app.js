@@ -186,7 +186,7 @@ function onedithandler(ele){
  moviename.value=edit_obj.movieName
  movieimage.value=edit_obj.movieImage
  movieDesc.value=edit_obj.movieDescription
- movieRat.value=edit_obj.movieRat
+ movieRating: movieRat.value
 
 }
 
